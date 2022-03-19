@@ -20,7 +20,7 @@ int fn(void* arg){
 int  main(int argc, char *argv[])
 {
   char stack[1024];
-  pid_t pid = clone(fn, stack+1024, CLONE_PARENT, argv[1]);
+  pid_t pid = clone(fn, stack+1024, SIGCHLD, argv[1]);
 
   if(waitpid(pid, NULL, 0) == -1){
     std::cerr<<"error waitpid()\n";
