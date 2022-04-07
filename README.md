@@ -1,4 +1,39 @@
-# examples
-for test examples 
+see below token of github, expire to 18.02.2023
+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
 
-Here is an arhiv of code examples 
+// name of call in file
+nm file
+
+// name and path libriries
+ldd <file>
+
+//
+clang file.cpp -o file -lstdc++ -pthread
+-shared // create shared library
+
+// tree of processes
+pstree
+
+// 
+nm <file>
+c++filt <simbol from file>
+
+// ThreadSanitizer is a fast and easy-to-use data race detector into Clang > 3.1 and GCC > 4.7
+// complie with -fsanitize=thread -fPIC
+// link with -fsanitize=thread
+// run and get data races printed to stderr
+clang file.cpp -o file -lstdc++ -pthread -fPIC -fsanitize=thread
+./thread
+
+// file.ii is listing afetr preprocessing #if, #define 
+clang -E file.cpp -o file.ii
+emacs file.ii
+
+// file.asm is assembler code
+clang -S file.cpp -o file.asm
+emacs file.asm
+
+// compile debug version and run in gdb
+clang -g file.cpp -o file
+gdb ./file
+(gdb) run
