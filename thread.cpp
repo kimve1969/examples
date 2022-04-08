@@ -2,7 +2,7 @@
 #include<thread>
 #include<atomic>
 
-// clang thread.cpp -o thread -lstdc++ -ptherad -fsanitize=thread -fPIC
+// clang thread.cpp -o thread -lstdc++ -pthread -fsanitize=thread -fPIC
 //int gint = 0; // concurrent is bad
 std::atomic<int> gint(0); // concurrent is ok 
 
