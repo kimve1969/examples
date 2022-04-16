@@ -3,8 +3,8 @@
 #include<atomic>
 
 // clang thread.cpp -o thread -lstdc++ -pthread -fsanitize=thread -fPIC
-//int gint = 0; // concurrent is bad
-std::atomic<int> gint(0); // concurrent is ok 
+int gint = 0; // concurrent is bad
+//std::atomic<int> gint(0); // concurrent is ok 
 
 void incr(){
   for(int i=0; i<1'000'000; ++i) ++gint;
