@@ -4,7 +4,21 @@ github \ settings \ developer settings \ personal access tokens
 // my token
 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	16/06/2022
 
-//and see how story username and password:
+// set user and mail
+git config --global user.name=kimve1969
+git config --global user.mail=kimve@mail.ru
+git config --global --edit
+
+// set username and password
+git config credential.helper store
+git push
+https://github.com: <username>
+https://kimve1969@github.com: <password>
+git config --global credential.helper 'cache --timeout 8640000'
+git config --global --edit
+
+
+//help how story username and password:
 git help credentials
 
 // name of call in file
