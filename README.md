@@ -1,5 +1,11 @@
-see below token of github, expire to
-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
+// as change token on github
+github \ settings \ developer settings \ personal access tokens
+
+// my token
+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	16/06/2022
+
+//and see how story username and password:
+git help credentials
 
 // name of call in file
 nm file

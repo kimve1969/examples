@@ -34,7 +34,7 @@ int main(){
   std::cout<<"x = "<<x<<", lrefx = "<<lrefx<<", clrefx = "<<clrefx<<", rrefx = "<<rrefx<<std::endl;
 
   // ------- TEST to pass parameters to function ------
-  std::cout<<"TEST g_by_val()\n";
+  std::cout<<"\nTEST g_by_val()\n";
   
   g_by_val(x); 
   g_by_val(lrefx);
