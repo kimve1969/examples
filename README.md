@@ -3,6 +3,8 @@ github \ settings \ developer settings \ personal access tokens
 
 // my token
 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	16/06/2022
+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
+
 
 // set user and mail
 git config --global user.name=kimve1969
@@ -30,6 +32,7 @@ ldd <file>
 //
 clang file.cpp -o file -lstdc++ -pthread
 -shared // create shared library
+-E // preproccesing
 
 // tree of processes
 pstree
